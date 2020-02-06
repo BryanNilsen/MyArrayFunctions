@@ -8,14 +8,19 @@ const wordsArray = ["blue", "red", "pizza", "mountain", "paper", "guitar"]
 
 
 // forEach() >> executes a provided function once for each array element
+// TODO test required
 function myForEach(theArray, theAction) {
   for (let i = 0; i < theArray.length; i++) {
     const currentElement = theArray[i];
     theAction(currentElement, i)
   }
+
 }
 
 myForEach(numberArray, (num) => console.log(num + 3))
+
+
+
 
 // map() >> creates a new array populated with the results of calling a provided function on every element in the calling array.
 function myMap(theArray, theAction) {
@@ -27,10 +32,6 @@ function myMap(theArray, theAction) {
   }
   return newArray
 }
-
-const mappedArray = myMap(numberArray, (num) => `<li>Your number was: ${num}</li>`)
-console.log('mappedArray: ', mappedArray);
-
 
 
 
@@ -115,6 +116,9 @@ function myIndexOf(theArray, theCondition) {
 const myIndexOfResult = myIndexOf(numberArray, (num) => num > 73)
 console.log('myIndexOfResult: ', myIndexOfResult);
 
+
+
+
 // lastIndexOf() >> returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 function myLastIndexOf(theArray, theCondition) {
   for (let i = theArray.length - 1; i >= 0; i--) {
@@ -126,6 +130,8 @@ function myLastIndexOf(theArray, theCondition) {
 }
 const myLastIndexOfResult = myLastIndexOf(numberArray, (num) => num === 3)
 console.log('myLastIndexOfResult: ', myLastIndexOfResult);
+
+
 
 
 // join() >> creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
@@ -152,6 +158,9 @@ console.log('joinedArray: ', joinedArray);
 const joinedArrayWithSeparator = myJoin(numberArray, " -- ")
 console.log('joinedArrayWithSeparator: ', joinedArrayWithSeparator);
 
+
+
+
 // concat() >> used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 function myConcat(theFirstArray, theSecondArray) {
   const newArray = []
@@ -166,6 +175,9 @@ function myConcat(theFirstArray, theSecondArray) {
 
 const concatArray = myConcat(numberArray, wordsArray)
 console.log('concatArray: ', concatArray);
+
+
+
 
 // reduce() >> executes a reducer function (that you provide) on each element of the array, resulting in a single output value
 function myReduce(theArray, reducer, acc) {
@@ -195,3 +207,21 @@ function myReverse(theArray) {
 
 const reversedArray = myReverse(numberArray)
 console.log('reversedArray: ', reversedArray);
+
+
+
+
+module.exports = {
+  myForEach,
+  myMap,
+  myIncludes,
+  mySome,
+  myEvery,
+  myFind,
+  myIndexOf,
+  myLastIndexOf,
+  myJoin,
+  myConcat,
+  myReduce,
+  myReverse
+}
