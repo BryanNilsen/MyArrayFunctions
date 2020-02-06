@@ -1,0 +1,22 @@
+{
+  "name": "myarrayfunctions",
+  "version": "1.0.0",
+  "description": "## A JavaScript Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanNilsen/MyArrayFunctions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanNilsen/MyArrayFunctions/issues"
+  },
+  "homepage": "https://github.com/BryanNilsen/MyArrayFunctions#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
