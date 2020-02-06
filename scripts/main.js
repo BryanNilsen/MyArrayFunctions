@@ -6,8 +6,6 @@ const wordsArray = ["blue", "red", "pizza", "mountain", "paper", "guitar"]
 
 // Write your own "myXXX" functions to mimic the behavior of the following array methods.
 
-const sillyWords = ["neverland", "poppenbocker", "don", "shnoody", "pizza", "jackerman", "handlebar"]
-
 
 // forEach() >> executes a provided function once for each array element
 function myForEach(theArray, theAction) {
@@ -18,8 +16,6 @@ function myForEach(theArray, theAction) {
 }
 
 myForEach(numberArray, (num) => console.log(num + 3))
-
-myForEach(sillyWords, (word) => console.log(`You are a ${word} Butt!`))
 
 // map() >> creates a new array populated with the results of calling a provided function on every element in the calling array.
 function myMap(theArray, theAction) {
